@@ -1,0 +1,102 @@
+header{
+    display: flex;
+    flex-wrap: nowrap;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: map-get($colores, primario);
+    padding: 10px;
+    z-index: 1000000;
+    @include media-query-mobile{
+        flex-direction: column;
+        max-height: 200px;
+    }
+    @include media-query-mobile-s{
+        max-height: 200px;
+        flex-direction: column;
+        max-width: 100%;
+    }
+        .logo h1{
+            width: 10%;
+            max-width: 10%;
+            font-size: 30px;
+            margin-top: 10px;
+            margin-left: 30px;
+            color: map-get($colores, cuaternario);
+            font-weight: 600;
+            order: -1;
+            @include media-query-mobile{
+                margin-left: 90px;
+                margin-top: 0px;
+                order: 2;
+            }
+            @include media-query-mobile-s{
+                font-size: 28px;
+                margin-left: 140px;
+            }
+        }
+        .icons-header{
+            max-width: 40%;
+            margin: 20px 0px;
+            order: 6;
+            @include media-query-mobile{
+                max-width: unset;
+                margin: -1px -20px;
+            }
+            @include media-query-mobile-s{
+                max-width: unset;
+                margin: -1px -20px;
+            }
+        }
+        .d-flex{
+            justify-content: space-between;
+            align-items: center;
+        }
+}
+
+.container-fluid{
+    height: 60px;
+    @include media-query-mobile{
+        height: unset;
+    }
+    @include media-query-mobile-s{
+        height: unset;
+    }
+}
+
+.navbar{
+    @include media-query-mobile{
+    order: -3;
+    position: fixed;
+    }
+}
+
+.bg-body-tertiary{ 
+    padding: unset;
+    width: fit-content;
+    border-radius: 10px;
+    display: block;
+    margin-top: 45px;
+    margin-left: 420px;
+    @include media-query-mobile{
+        margin-top: 35px;
+        margin-left: 15px;
+    }
+    @include media-query-mobile-s{
+        margin-top: 35px;
+        margin-left: 8px;
+    }
+}
+
+.btn-outline-success{
+    --bs-btn-color: black;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-bg: unset;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-active-border-color: black;
+    --bs-btn-disabled-color: black;
+    --bs-btn-active-bg: unset;
+}

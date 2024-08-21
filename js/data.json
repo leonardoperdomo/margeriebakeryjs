@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "category": "tartas",
+    "description": "masa sable",
+    "image": "../images/lemonpie.jpg",
+    "price": 8000,
+    "rating": {
+      "rate": 4.7,
+      "count": 120
+    },
+    "title": "Lemon Pie"
+  },
+  {
+    "id": 2,
+    "category": "tartas",
+    "description": "double chocolate",
+    "image": "../images/brownie.jpg",
+    "price": 18000,
+    "rating": {
+      "rate": 4.7,
+      "count": 120
+    },
+    "title": "Brownie"
+  },
+  {
+    "id": 3,
+    "category": "tartas",
+    "description": "chocotorta",
+    "image": "../images/chocotorta.jpg",
+    "price": 18000,
+    "rating": {
+      "rate": 4.7,
+      "count": 120
+    },
+    "title": "Chocotorta"
+  },
+  {
+    "id": 4,
+    "category": "tartas",
+    "description": "cheesecake",
+    "image": "../images/cheesecake.jpg",
+    "price": 18000,
+    "rating": {
+      "rate": 4.7,
+      "count": 120
+    },
+    "title": "Cheesecake"
+  },
+  {
+    "id": 5,
+    "category": "tartas",
+    "description": "rogel",
+    "image": "../images/rogel.jpg",
+    "price": 18000,
+    "rating": {
+      "rate": 4.7,
+      "count": 120
+    },
+    "title": "Rogel Cake"
+  },
+  {
+    "id": 6,
+    "category": "tartas",
+    "description": "selva negra",
+    "image": "../images/selvanegra.jpg",
+    "price": 18000,
+    "rating": {
+      "rate": 4.7,
+      "count": 120
+    },
+    "title": "Selva Negra"
+  },
+  {
+    "id": 7,
+    "category": "tartas",
+    "description": "pastafrola",
+    "image": "../images/frola.jpg",
+    "price": 18000,
+    "rating": {
+      "rate": 4.7,
+      "count": 120
+    },
+    "title": "Pasta Frola Membrillo"
+  }
+]

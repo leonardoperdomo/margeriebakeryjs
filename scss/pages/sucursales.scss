@@ -1,0 +1,16 @@
+.containerSucursales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+        div{
+        padding: 10px;
+        }
+        iframe{
+            width: 90%;
+            height: auto;
+        }
+}

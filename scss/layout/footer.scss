@@ -1,0 +1,22 @@
+footer{
+    background-color: map-get($colores, primario);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+        div{
+        margin: 15px;
+    }
+            a{
+                text-decoration: none;
+            }
+            li{
+                list-style-type: none;
+            }
+        @include media-query-mobile-s{
+        margin: 10px;
+            p{
+                margin-top: 30px;
+            }
+        }    
+}
