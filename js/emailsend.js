@@ -1,9 +1,3 @@
-// public key e5cWKp7I0XW_rvUXT
-//service id service_sc64qlp
-// template id template_mlzj4h7
-
-//name, message, email
-
 let contactoForm = document.getElementById("formContacto");
 contactoForm.addEventListener("submit", (evento) => {
   evento.preventDefault();

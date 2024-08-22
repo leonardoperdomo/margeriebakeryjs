@@ -1,13 +1,14 @@
 let products = [];
 
-document.addEventListener("DOMContentLoaded", () => {
-  const getProducts = fetch("../js/data.json");
-  getProducts
-    .then((res) => res.json())
-    .then((res) => {
-      products = res;
-      renderProducts(products);
-    });
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const getProducts = await fetch("../js/data.json");
+    const res = await getProducts.json();
+    products = res;
+    renderProducts(products);
+  } catch (error) {
+    console.error("Error fetching products:", error);
+  }
 });
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -29,7 +30,7 @@ const renderProducts = (ArrayProductos) => {
 
 const AddToCart = (id) => {
   let product = products.find((elemento) => elemento.id === id);
-  productOnTheCart = cart.find((elemento) => elemento.id === id);
+  let productOnTheCart = cart.find((elemento) => elemento.id === id);
   if (productOnTheCart) {
     productOnTheCart.quantity += 1;
     Toastify({
